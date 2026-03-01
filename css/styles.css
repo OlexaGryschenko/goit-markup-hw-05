@@ -170,11 +170,6 @@ address {
   gap: 40px;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: #404bbf;
-}
-
 .contacts-link {
   font-size: 16px;
   line-height: 1.5;
@@ -436,6 +431,9 @@ address {
   padding: 100px 0;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
+.footer-subscribe-container {
+  margin-left: 80px;
+}
 
 .footer-container {
   display: flex;
@@ -490,11 +488,19 @@ address {
   margin-bottom: 16px;
 }
 
+.footer-subscribe-title {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
 
 
   .footer-label-wrap{
     display: flex;
-    justify-content: сenter;
+    justify-content: center;
     flex-direction: column;
     margin-left: auto;
 
@@ -512,10 +518,15 @@ address {
 
   .footer-form{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 80px;
+    align-items: flex-start;
+    gap: 24px;
+    
   }
+
+.footer-label-wrap, 
+.footer-btn-wrap {
+  margin: 0;
+}
 
 .footer-subscribe-button {
   display: flex;
@@ -544,6 +555,54 @@ address {
 .footer-subscribe-button:focus {
   background-color: #404bbf;
   /* margin-left: auto; */
+}
+
+.footer-input {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  padding-left: 16px;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-input:focus {
+  border-color: #4d5ae5;
+}
+.footer-input::placeholder {
+  color: #ffffff;
+}
+
+.footer-button {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-width: 165px;
+  height: 40px;
+  padding: 8px 24px;
+  background-color: #4d5ae5;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-button:hover,
+.footer-button:focus {
+  background-color: #404bbf;
+}
+.footer-button-icon {
+  margin-left: 16px;
+  fill: #ffffff;
 }
 
 
@@ -646,6 +705,11 @@ address {
   fill: #ffffff;
 }
 
+
+
+
+
+
 /* form and Inputs */
 
 .modal-input-wrap {
@@ -722,18 +786,6 @@ address {
   margin-bottom: 24px;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 
 .modal-check-label {
   display: flex;
@@ -753,7 +805,7 @@ address {
   fill: transparent;
   transition:
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -765,7 +817,7 @@ address {
 
 .label-text {
   font-size: 12px;
-  line-height: 1.17%;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
@@ -786,7 +838,8 @@ address {
   line-height: 1.5;
   letter-spacing: 0.04em;
   border: none;
-  padding: 16px 64px;
+  padding: 16px 32px;
+  min-width: 169px;
   display: block;
   margin: 24px auto 0;
   border-radius: 4px;
@@ -798,15 +851,25 @@ address {
 .modal-submit:focus {
   background-color: #404bbf;
 }
-.footer-input-email{
-  width: 100%;
+.footer-input-email {
+  width: 264px; /* Зазвичай за макетом 264px */
   height: 40px;
   padding-left: 16px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  border: 1px solid #ffffff; /* У футері рамка біла */
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  background-color: transparent; /* Обов'язково для футера */
+  color: #ffffff; /* Текст має бути білим */
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+}
+
+.footer-input-email::placeholder {
+  color: #ffffff;
+}
 
   .footer-input-email:focus {
   outline: transparent;
