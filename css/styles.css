@@ -197,7 +197,7 @@ address {
   padding-bottom: 188px;
   background-image:
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/hero/people-office\ 1.png);
+    url("../images/hero/people-office\ 1.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -292,7 +292,7 @@ address {
 }
 
 .team-item {
-  width: calc((100% - 3 * 24px) / 4);
+  width: calc((100% -72px) / 4);
   background-color: #ffffff;
   border-radius: 0 0 4px 4px;
   box-shadow:
@@ -376,7 +376,7 @@ address {
 }
 
 .portfolio-item {
-  width: calc((100% - 24px * 2) / 3);
+  width: calc((100% - 72px) / 3);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -471,7 +471,7 @@ address {
 
 .footer-social-list {
   display: flex;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
   gap: 16px;
 }
 
@@ -487,7 +487,7 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
 }
 
 .footer-subscribe-title {
@@ -514,26 +514,27 @@ address {
 
   .footer-form{
     display: flex;
-    align-items: flex-start;
+    /* align-items: flex-start; */
+    align-items: end;
     gap: 24px;
     
   }
 
-.footer-label-wrap {
+/* .footer-label-wrap {
   margin: 0;
-}
+} */
 
-.footer-submit-icon {
+/* .footer-submit-icon {
   margin-left: 16px;
-  fill: #ffffff; /* Заміна var(--white) */
-}
+  fill: #ffffff;
+} */
 
 
-.footer-subscribe-button:hover,
+/* .footer-subscribe-button:hover,
 .footer-subscribe-button:focus {
   background-color: #404bbf;
-  /* margin-left: auto; */
-}
+  margin-left: auto;
+} */
 
 .footer-input {
   width: 264px;
@@ -560,7 +561,7 @@ address {
 
 .footer-button {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   min-width: 165px;
   height: 40px;
